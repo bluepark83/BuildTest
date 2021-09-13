@@ -10,7 +10,7 @@ public class ScriptBatch
         string[] levels = new string[] {"Assets/Scenes/Scene1.unity"};
 
         // Build player.
-        BuildPipeline.BuildPlayer(levels, "BuiltGame.exe", BuildTarget.StandaloneWindows, BuildOptions.None);
+        BuildPipeline.BuildPlayer(levels, "./Build/BuiltGame.exe", BuildTarget.StandaloneWindows, BuildOptions.None);
 
         UnityEngine.Debug.Log("Complete Build");
     }
